@@ -14,8 +14,8 @@
   <!-- 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
-  <link rel="stylesheet" href="./docsify-static/sidebar.min.css">
-  <link rel="stylesheet" id="theme" href="./docsify-static/css/buble.css">
+<!--  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">-->
+  <link rel="stylesheet" id="theme" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css">
 
   <nav>
     <div id='themeChange' style="cursor: pointer;">暗黑主题</div>
@@ -56,7 +56,7 @@
         window.$docsify = {
             search: {
                 maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-                paths: auto,// 注意：仅适用于 paths: 'auto' 模式
+                paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
                 placeholder: '搜索',
                 // 支持本地化
                 placeholder: {
@@ -71,16 +71,6 @@
         }
 
 </script>
-<!-- docsify的js依赖 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-<!-- emoji表情支持 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
-<!-- 图片放大缩小支持 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-<!-- 搜索功能支持 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-<!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
 <script>
 window.onload = function() {
@@ -92,24 +82,34 @@ window.onload = function() {
                 switch (themeChange.innerHTML) {
                     case '暗黑主题':
                         document.getElementById('themeChange').innerHTML = '简白主题';
-                        document.getElementById('theme').href = "./docsify-static/css/dark.css";
+                        document.getElementById('theme').href = "//cdn.jsdelivr.net/npm/docsify/lib/themes/dark.css";
                         break;
                     case '简白主题':
                         document.getElementById('themeChange').innerHTML = '默认主题';
-                        document.getElementById('theme').href = "./docsify-static/css/vue.css";
+                        document.getElementById('theme').href = "//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css";
                         break;
                     case '默认主题':
                         document.getElementById('themeChange').innerHTML = '暗黑主题';
-                        document.getElementById('theme').href = "./docsify-static/css/buble.css";
+                        document.getElementById('theme').href = "//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css";
                         break;
                     default:
                         document.getElementById('themeChange').innerHTML = '暗黑主题';
-                        document.getElementById('theme').href = "./docsify-static/css/buble.css";
+                        document.getElementById('theme').href = "//cdn.jsdelivr.net/npm/docsify/lib/themes/buble.css";
                 }
             })
         }
 
 </script>
+<!-- docsify的js依赖 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<!-- emoji表情支持 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+<!-- 搜索功能支持 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+<!-- 图片放大缩小支持 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
 </body>
 
