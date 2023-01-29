@@ -50,6 +50,9 @@ README.md 会做为主页内容渲染
 # 本地部署  [教程](https://docsify.js.org/#/zh-cn/quickstart)
 通过运行 docsify serve 项目名称 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000 。
 
+# 重要文件 ？？ 原因还在 todo 
+.nojekyll 用于阻止 GitHub Pages 忽略掉下划线开头的文件
+
 # [关于捐赠](donate/README.md) 
 [2.1 DONATE 捐赠](donate/README.md)
 - 捐赠的意义在于让原创更精彩！
