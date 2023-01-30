@@ -13,6 +13,8 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
   <!-- 默认主题 -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <!-- gitalk 主题 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"/>
 
 </head>
 
@@ -72,9 +74,6 @@
         }
 
 
-
-
-
 </script>
 
 <!-- emoji表情支持 -->
@@ -85,6 +84,22 @@
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
 <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+  const gitalk = new Gitalk({
+      clientID: '9adcc6e995b0e5f3eb6f',
+      clientSecret: 'd9df8c108c505951c4722f2e404f0eadd6eebdd1',
+      repo: 'docsify_sample',
+      owner: 'boxtrade',
+      admin: ['chenGit1763113879QQ'],
+      distractionFreeMode: false,
+      id: decodeURI(window.location.pathname),
+    })
+
+</script>
 
 </body>
 
