@@ -1,4 +1,5 @@
 <!-- _navbar.md -->
+* [本站](https://boxtrade.github.io/docsify_sample/#/)
 
 * Docsify学习链接
   * [网站样例](https://github.com/docsifyjs/awesome-docsify#showcase)
