@@ -47,8 +47,8 @@
 
               plugins: [
                           EditOnGithubPlugin.create(
+                            'https://github.com/boxtrade/docsify_sample/blob/main/',
                             'https://github.com/boxtrade/docsify_sample/edit/main/',
-                            null,
                             function(file) {
                               if (file.indexOf('en') === -1) {
                                 return '编辑'
@@ -56,9 +56,21 @@
                                 return 'edit on git'
                               }
                             }
-                          )
-                      ]
+                          ),
+                      ],
+             pagination: {
+              previousText: '上一章节',
+              // or
+              nextText: {
+                '/en/': 'NEXT',
+                '/': '下一章节'
+              },
+              crossChapter: true,
+              crossChapterText: true,
+            },
+
         }
+
 
 
 
@@ -71,6 +83,9 @@
 <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 <!-- 图片放大缩小支持 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
 </body>
 
 </html>
