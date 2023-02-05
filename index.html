@@ -27,11 +27,13 @@
 
 
 <script>
+
+      var basePath = 'https://raw.githubusercontent.com/chenGit1763113879QQ/404StarLink/master/';
         window.$docsify = {
             // 项目名称
             name: '404StarLink',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
-            repo: 'https://github.com/knownsec/404StarLink',
+            repo: 'https://github.com/chenGit1763113879QQ/404StarLink',
             // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
 <!--            loadSidebar: true,-->
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
@@ -47,8 +49,8 @@
 
               plugins: [
                           EditOnGithubPlugin.create(
-                            'https://github.com/knownsec/404StarLink/blob/master/',
-                            'https://github.com/knownsec/404StarLink/edit/master/',
+                            'https://github.com/chenGit1763113879QQ/404StarLink/blob/master/',
+                            'https://github.com/chenGit1763113879QQ/404StarLink/edit/master/',
                             function(file) {
                               if (file.indexOf('en') === -1) {
                                 return '编辑'
@@ -57,6 +59,26 @@
                               }
                             }
                           ),
+                    <!--              img src 替换            -->
+                     function (hook, vm) {
+                        hook.beforeEach(function (html) {
+                        });
+                        hook.doneEach(function() {
+                          console.log("doneEach 每次路由切换时数据全部加载完成后调用，没有参数。") ;
+                          console.log(" ...") ;
+                            Docsify.dom.findAll("img").forEach(function(element) {
+                               console.log(element);
+                               var srcurl = element.getAttribute("src");
+                               if(srcurl.indexOf('http') == -1){
+                                  var newsrc= basePath + srcurl;
+                                  element.setAttribute("src",newsrc);
+                                }
+                              })
+                          });
+
+
+                      },
+                    <!--              img src 替换            -->
                       ],
              pagination: {
               previousText: '上一章节',
@@ -72,15 +94,15 @@
          //别名
          alias: {
                '/(.*)':
-                    'https://raw.githubusercontent.com/knownsec/404StarLink/master/$1',
+                    'https://raw.githubusercontent.com/chenGit1763113879QQ/404StarLink/master/$1',
         },
         // Even can load files from other repo
         basePath:
-          'https://raw.githubusercontent.com/knownsec/404StarLink/master/',
+          'https://raw.githubusercontent.com/chenGit1763113879QQ/404StarLink/master/',
 
         // Or use the readme in your repo
         homepage:
-          'https://raw.githubusercontent.com/knownsec/404StarLink/master/README.md',
+          'https://raw.githubusercontent.com/chenGit1763113879QQ/404StarLink/master/README.md',
 
 
         }
