@@ -29,15 +29,15 @@
 <script>
         window.$docsify = {
             // 项目名称
-            name: 'Docsify-Sample',
+            name: '404StarLink',
             // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
-            repo: 'https://github.com/boxtrade/docsify_sample',
+            repo: 'https://github.com/knownsec/404StarLink',
             // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
-            loadSidebar: true,
+<!--            loadSidebar: true,-->
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-            loadNavbar: true,
+<!--            loadNavbar: true,-->
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-            coverpage: true,
+<!--            coverpage: true,-->
             // 最大支持渲染的标题层级
             maxLevel: 5,
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
@@ -47,8 +47,8 @@
 
               plugins: [
                           EditOnGithubPlugin.create(
-                            'https://github.com/boxtrade/docsify_sample/blob/main/',
-                            'https://github.com/boxtrade/docsify_sample/edit/main/',
+                            'https://github.com/knownsec/404StarLink/blob/master/',
+                            'https://github.com/knownsec/404StarLink/edit/master/',
                             function(file) {
                               if (file.indexOf('en') === -1) {
                                 return '编辑'
@@ -71,60 +71,24 @@
 
          //别名
          alias: {
-          '.*?/awesome':
-            'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
-          '.*?/changelog':
-            'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
-          '/.*/_navbar.md': '/_navbar.md',
-          '/es/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
-          '/de-de/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-          '/ru-ru/(.*)':
-            'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-          '/zh-cn/(.*)':
-            'https://cdn.jsdelivr.net/gh/docsifyjs/docs-zh@master/$1',
-
-               '/_coverpage.md':
-              '/_coverpage.md',
-             '/_navbar.md':
-              '/_navbar.md',
-          '/.*/_navbar.md':
-              '/_navbar.md',
-          '/marktext/_sidebar.md':
-              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
-                  '/_sidebar.md':
-              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
-         '/marktext/(.*)':
-              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/$1',
-
-            '/(.*)':
-           'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/$1',
-<!--           '/assets/(.*)':-->
-<!--           'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/assets/$1',-->
-
-
+               '/(.*)':
+                    'https://raw.githubusercontent.com//knownsec/404StarLink/master/$1',
         },
-       // Even can load files from other repo
-<!--        basePath:-->
-<!--              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/',-->
         // Or use the readme in your repo
         homepage:
-          'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/README.md',
+          'https://raw.githubusercontent.com/knownsec/404StarLink/master/README.md',
 
-         crossOriginLinks: ['https://gitee.com/',
-         'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
-
-         ],
-
-      // Even can load files from other repo
-      basePath:
-         'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/',
-        // Or use the readme in your repo
-        homepage:
-          'https://raw.githubusercontent.com/marktext/marktext/develop/README.md',
+        // Even can load files from other repo
+        basePath:
+          'https://raw.githubusercontent.com//knownsec/404StarLink/master',
 
         }
+
+
+
+
+
+
 
 
 
