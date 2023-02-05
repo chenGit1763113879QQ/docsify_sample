@@ -72,15 +72,16 @@
          //别名
          alias: {
                '/(.*)':
-                    'https://raw.githubusercontent.com//knownsec/404StarLink/master/$1',
+                    'https://raw.githubusercontent.com/knownsec/404StarLink/master/$1',
         },
+        // Even can load files from other repo
+        basePath:
+          'https://raw.githubusercontent.com/knownsec/404StarLink/master/',
+
         // Or use the readme in your repo
         homepage:
           'https://raw.githubusercontent.com/knownsec/404StarLink/master/README.md',
 
-        // Even can load files from other repo
-        basePath:
-          'https://raw.githubusercontent.com//knownsec/404StarLink/master',
 
         }
 
