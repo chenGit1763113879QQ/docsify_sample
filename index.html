@@ -69,7 +69,63 @@
               crossChapterText: true,
             },
 
+         //别名
+         alias: {
+          '.*?/awesome':
+            'https://raw.githubusercontent.com/docsifyjs/awesome-docsify/master/README.md',
+          '.*?/changelog':
+            'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG.md',
+          '/.*/_navbar.md': '/_navbar.md',
+          '/es/(.*)':
+            'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1',
+          '/de-de/(.*)':
+            'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
+          '/ru-ru/(.*)':
+            'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
+          '/zh-cn/(.*)':
+            'https://cdn.jsdelivr.net/gh/docsifyjs/docs-zh@master/$1',
+
+               '/_coverpage.md':
+              '/_coverpage.md',
+             '/_navbar.md':
+              '/_navbar.md',
+          '/.*/_navbar.md':
+              '/_navbar.md',
+          '/marktext/_sidebar.md':
+              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
+                  '/_sidebar.md':
+              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
+         '/marktext/(.*)':
+              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/$1',
+
+            '/(.*)':
+           'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/$1',
+<!--           '/assets/(.*)':-->
+<!--           'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/assets/$1',-->
+
+
+        },
+       // Even can load files from other repo
+<!--        basePath:-->
+<!--              'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/',-->
+        // Or use the readme in your repo
+        homepage:
+          'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/README.md',
+
+         crossOriginLinks: ['https://gitee.com/',
+         'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/README.md',
+
+         ],
+
+      // Even can load files from other repo
+      basePath:
+         'https://raw.githubusercontent.com/chenGit1763113879QQ/marktext/develop/docs/',
+        // Or use the readme in your repo
+        homepage:
+          'https://raw.githubusercontent.com/marktext/marktext/develop/README.md',
+
         }
+
 
 
 </script>
